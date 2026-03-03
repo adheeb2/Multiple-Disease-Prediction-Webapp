@@ -42,22 +42,22 @@ Please follow the below steps to run this project.
 
 
 
-Pretrained models are stored in Frontend/models.
+- Pretrained models are stored in Frontend/models.
 
-Backend logic for 'disease prediction' button is found in Frontend/code.
+- Backend logic for 'disease prediction' button is found in Frontend/code.
 
-PIMA directory contains diabetes prediction machine learning pipeline
+- PIMA directory contains diabetes prediction machine learning pipeline
 
-disease prediction uses xgboost
+- disease prediction uses xgboost
 
-diabetes,parkinson uses svc(works well with pima dataset, commonly used for diabetes prediction)
+- diabetes,parkinson uses svc(works well with pima dataset, commonly used for diabetes prediction)
 
-heart disease,liver,chronic kidney uses logistic regression(linearly seperable)
+- heart disease,liver,chronic kidney uses logistic regression(linearly seperable)
 
-hepatitis uses random forest
+- hepatitis uses random forest
 
 
-xgboost,svc,logistic regerssion
+- xgboost,svc,logistic regerssion
 
 
 env\Scripts\activate
