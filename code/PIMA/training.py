@@ -66,7 +66,7 @@ def run_full_pipeline(cfg):
     # numeric preprocess (impute + scale)
     X_train_num, X_hold_num, imputer, scaler, num_cols = preprocess_numeric(X_train_final, X_hold_final)
 
-    # feature selection
+    # feature selection(only choose best 20 features, to reduce noise and overfitting)
     selector = SelectKBest(f_classif, k=min(20, X_train_num.shape[1]))
     X_train_sel = selector.fit_transform(X_train_num, y_train)
     X_hold_sel = selector.transform(X_hold_num)
@@ -125,7 +125,7 @@ def run_full_pipeline(cfg):
     if not cv_scores:
         raise RuntimeError("No models successfully evaluated in CV. Check model configs and data.")
 
-    # select top_n
+    # select top_n(selecting best model out of it)
     top_sorted = sorted(cv_scores.items(), key=lambda x: x[1], reverse=True)[:cfg['top_n']]
     top_names = [t[0] for t in top_sorted]
     logger.info("Top models: %s", top_names)
@@ -133,7 +133,7 @@ def run_full_pipeline(cfg):
     # prepare tuned_models placeholder (insert Optuna tuning here if desired)
     tuned_models = {n: models[n] for n in top_names}
 
-    # calibrate tuned models (wrap with CalibratedClassifierCV for better probability estimates)
+    # calibrate tuned models (wrap with CalibratedClassifierCV for better probability estimates because some models are bad at it)
     calibrated = {}
     from sklearn.calibration import CalibratedClassifierCV
     for n, clf in tuned_models.items():

@@ -28,7 +28,7 @@ y_data = clean_df.iloc[:,-1]
 # Convert y to categorical values
 y_data = y_data.astype('category')
 
-# Convert y categories tu numbers with encoder
+# Convert y categories to numbers with encoder
 le = preprocessing.LabelEncoder()
 le.fit(y_data)
 

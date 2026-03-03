@@ -10,10 +10,10 @@ class DiseaseModel:
         self.model = xgb.XGBClassifier()
         self.diseases = self.disease_list('data/dataset.csv')
 
-    def load_xgboost(self, model_path):
+    def load_xgboost(self, model_path):#loads pre trained xgboost model from model/
         self.model.load_model(model_path)
 
-    def save_xgboost(self, model_path):
+    def save_xgboost(self, model_path):#not used
         self.model.save_model(model_path)
 
     def predict(self, X):

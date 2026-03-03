@@ -5,7 +5,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import StratifiedKFold
 
-class KFoldTargetEncoder(BaseEstimator, TransformerMixin):
+class KFoldTargetEncoder(BaseEstimator, TransformerMixin):#prevents data leakage that causes overfitting
     def __init__(self, cols=None, n_splits=5, smoothing=1.0, random_state=42):
         self.cols = cols or []
         self.n_splits = n_splits
@@ -57,7 +57,7 @@ class KFoldTargetEncoder(BaseEstimator, TransformerMixin):
                 X[c + '_te'] = X[c].map(getval).fillna(self.global_mean_)
             return X
 
-def preprocess_numeric(X_train_df, X_hold_df):
+def preprocess_numeric(X_train_df, X_hold_df):#handles missing values and feature scaling(either 0 or 1)
     num_cols = X_train_df.select_dtypes(include=[np.number]).columns.tolist()
     imputer = SimpleImputer(strategy='median')
     scaler = StandardScaler()

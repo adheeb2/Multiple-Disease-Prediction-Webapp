@@ -68,13 +68,13 @@ if selected == 'Disease Prediction':
 
     symptoms = st.multiselect('What are your symptoms?', options=disease_model.all_symptoms)
 
-    X = prepare_symptoms_array(symptoms)
+    X = prepare_symptoms_array(symptoms)#From helper function in Frontend/code/helper.py
 
     # Trigger XGBoost model
     if st.button('Predict'): 
         # Run the model with the python script
         
-        prediction, prob = disease_model.predict(X)
+        prediction, prob = disease_model.predict(X)#taken from DiseaseModel
         st.write(f'## Disease: {prediction} with {prob*100:.2f}% probability')
 
 
@@ -109,7 +109,7 @@ if selected == 'Diabetes Prediction':  # pagetitle
         BloodPressure = st.number_input("Blood pressure  value")
     with col1:
 
-        SkinThickness = st.number_input("Sckinthickness value")
+        SkinThickness = st.number_input("Skin thickness value")
 
     with col2:
 
@@ -118,7 +118,7 @@ if selected == 'Diabetes Prediction':  # pagetitle
         BMI = st.number_input("BMI value")
     with col1:
         DiabetesPedigreefunction = st.number_input(
-            "Diabetespedigreefunction value")
+            "Diabetes pedigree function value")
     with col2:
 
         Age = st.number_input("AGE")
@@ -265,9 +265,6 @@ if selected == 'Heart disease Prediction':
             image = Image.open('negative.jpg')
             st.image(image, caption='')
         st.success(name +' , ' + heart_dig)
-
-
-
 
 
 
@@ -909,3 +906,8 @@ if selected == 'Breast Cancer Prediction':
             breast_cancer_result = "The model predicts that you don't have Breast Cancer."
 
         st.success(breast_cancer_result)
+
+
+
+
+

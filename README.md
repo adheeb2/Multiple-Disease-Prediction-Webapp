@@ -2,12 +2,6 @@
 
 > **Abstract** : The designed web app employs the Streamlit Python library for frontend design and communicates with backend ML models to predict the probability of diseases. Multiple Disease Prediction has many machine learning models used in prediction. We will be able to choose the diseases from the navigation bar or a sidebar for which we want to make a prediction using various input values. These input values will be the symptoms, physical health data, or blood test results. We will first trained our model from historic data, so it can make accurate predictions. It's capable of predicting whether someone has Diabetes, Heart issues, Parkinson's, Liver conditions, Hepatitis, Jaundice, and more based on the provided symptoms, medical history, and results.
 
-### Project Members
-1. KHAN MOHAMMED DANISH NISAR AHMED  [ Team Leader ] 
-2. MANJREKAR SOHAM SHRIKANT 
-3. KHAN MUZAFFAR MOHAMMAD SOAIB 
-4. JAMADAR DANISH RASHID 
-
 
 ### Deployment Steps
 Please follow the below steps to run this project.
@@ -48,3 +42,19 @@ https://github.com/sohammanjrekar/rcoe22-sem5-group2/assets/83022701/b63635ef-31
 - [2] Archana Singh, Rakesh Kumar, “Heart Disease Prediction Using Machine Learning Algorithms”, 2020 IEEE, International Conference on Electrical and Electronics Engineering (ICE3) 
 - [3] A. Sivasangari, Baddigam Jaya Krishna Reddy, Annamareddy Kiran, P. Ajitha,” Diagnosis of Liver Disease using Machine Learning Models” 2020 Fourth International Conference on I-SMAC (IoT in Social, Mobile, Analytics and Cloud) (I-SMAC) 
 
+
+
+Pretrained models are stored in Frontend/models
+Backend logic for 'disease prediction' button is found in Frontend/code
+PIMA directory contains diabetes prediction machine learning pipeline
+
+disease prediction uses xgboost
+diabetes,parkinson uses svc(works well with pima dataset, commonly used for diabetes prediction)
+heart disease,liver,chronic kidney uses logistic regression(linearly seperable)
+hepatitis uses random forest
+
+
+xgboost,svc,logistic regerssion
+
+
+env\Scripts\activate
