@@ -25,8 +25,6 @@ Please follow the below steps to run this project.
 6. [Jaundice disease dataset](https://kaggle.com/dataset2)
    
 
-### Trailer
-https://github.com/sohammanjrekar/rcoe22-sem5-group2/assets/83022701/b63635ef-3195-4282-9e90-0b05c659fbcc
 
 <br></br>
 
@@ -44,13 +42,18 @@ https://github.com/sohammanjrekar/rcoe22-sem5-group2/assets/83022701/b63635ef-31
 
 
 
-Pretrained models are stored in Frontend/models
-Backend logic for 'disease prediction' button is found in Frontend/code
+Pretrained models are stored in Frontend/models.
+
+Backend logic for 'disease prediction' button is found in Frontend/code.
+
 PIMA directory contains diabetes prediction machine learning pipeline
 
 disease prediction uses xgboost
+
 diabetes,parkinson uses svc(works well with pima dataset, commonly used for diabetes prediction)
+
 heart disease,liver,chronic kidney uses logistic regression(linearly seperable)
+
 hepatitis uses random forest
 
 
