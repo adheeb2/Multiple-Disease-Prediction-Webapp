@@ -52,7 +52,7 @@ Please follow the below steps to run this project.
 
 - diabetes,parkinson uses svc(works well with pima dataset, commonly used for diabetes prediction)
 
-- heart disease,liver,chronic kidney uses logistic regression(linearly seperable)
+- heart disease,liver,chronic kidney,lung and breast cancer uses logistic regression(linearly seperable)
 
 - hepatitis uses random forest
 
