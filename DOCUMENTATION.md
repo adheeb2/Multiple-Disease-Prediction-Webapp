@@ -91,7 +91,7 @@ Multiple-Disease-Prediction-Webapp/
 | chol | Serum cholesterol | 126-564 | mg/dl |
 | fbs | Fasting blood sugar >120mg/dl | 0 or 1 | boolean |
 | restecg | Resting ECG results | 0-2 | categorical |
-| thalach | Maximum heart rate achieved | 71-202 | bpm |
+| thalach | Maximum heart rate achieved | 40-202 | bpm | 
 | exang | Exercise-induced angina | 0 or 1 | boolean |
 | oldpeak | ST depression induced by exercise | 0-6.2 | mm |
 | slope | Peak exercise ST segment | 0-2 | categorical |
