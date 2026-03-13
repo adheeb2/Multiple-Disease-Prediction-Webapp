@@ -203,42 +203,10 @@ diabetes_prediction = diabetes_model.predict([[
 ]])
 ```
 
----
 
-## How to Run Pipeline
 
-```bash
-cd code/PIMA
-pip install -r requirements.txt
-python run_pipeline.py
-```
 
-Or run programmatically:
 
-```python
-from training import run_full_pipeline
-from config_utils import load_config
-
-cfg = load_config('config.yml')
-run_full_pipeline(cfg)
-```
-
----
-
-## Key Techniques Used
-
-| Technique | Purpose |
-|-----------|---------|
-| SMOTETomek | Handle class imbalance |
-| SelectKBest | Feature selection (top 20) |
-| StandardScaler | Feature normalization |
-| KFoldTargetEncoder | Safe categorical encoding |
-| CalibratedClassifierCV | Better probability estimates |
-| VotingClassifier | Combine multiple models |
-| StackingClassifier | Meta-learning ensemble |
-| Weight Optimization | Find optimal model weights |
-
----
 
 ## References
 
