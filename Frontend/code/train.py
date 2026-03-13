@@ -21,7 +21,7 @@ clean_df = pd.merge(test,dataset_df['Disease'], left_index=True, right_index=Tru
 
 clean_df.to_csv('data/clean_dataset.tsv', sep='\t', index=False)
 
-# Preprocessing
+# model training    
 X_data = clean_df.iloc[:,:-1]
 y_data = clean_df.iloc[:,-1]
 
