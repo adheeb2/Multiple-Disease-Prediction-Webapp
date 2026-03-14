@@ -7,7 +7,7 @@
 Please follow the below steps to run this project.
 <br>
 1. `pip install -r requirements.txt`<br>
-2. `cd frontend`<br>
+2. `cd Frontend`<br>
 3. `streamlit run app.py`<br><br>
 
 
@@ -22,14 +22,14 @@ Please follow the below steps to run this project.
 3. [Parkinsons disease dataset](https://www.kaggle.com/code/arunkumarpyramid/detection-parkinson-s-disease/data)
 4. [Liver disease dataset](https://www.kaggle.com/code/harisyammnv/liver-disease-prediction/data)
 5. [Hepatities disease dataset](https://kaggle.com/dataset2)
-6. [Jaundice disease dataset](https://kaggle.com/dataset2)
+
    
 
 
 <br></br>
 
 ## Research Paper: Multiple Disease Prediction Webapp 
-- **Description:** A study that developed a web application capable of predicting multiple diseases, including diabetes, heart disease, Parkinson's, liver disease, jaundice, and hepatitis, using machine learning algorithms such as SVM, Decision Tree, and Random Forest. The system allows users to input data for a specific disease, and based on the trained model, the output is displayed. The paper also discusses the functional and non-functional requirements of the system, as well as the architecture design and implementation details.
+- **Description:** A study that developed a web application capable of predicting multiple diseases, including diabetes, heart disease, Parkinson's, liver disease and hepatitis, using machine learning algorithms such as SVM, Decision Tree, and Random Forest. The system allows users to input data for a specific disease, and based on the trained model, the output is displayed. The paper also discusses the functional and non-functional requirements of the system, as well as the architecture design and implementation details.
 - [Online JETIR Paper](https://www.jetir.org/view?paper=JETIR2210432)
 - [Letter of Acceptance](https://drive.google.com/file/d/1TFkoafPQJmC3_-XekMwk_HUMa7PA89sq/view?usp=sharing)
 - [Certificate of Each Member](https://drive.google.com/file/d/1FVPssNXveIYHfmhjTETgvED6NeNBucPm/view?usp=sharing)
@@ -52,7 +52,7 @@ Please follow the below steps to run this project.
 
 - diabetes,parkinson uses svc(works well with pima dataset, commonly used for diabetes prediction)
 
-- heart disease,liver,chronic kidney,lung and breast cancer uses logistic regression(linearly seperable)
+- heart disease,liver,lung  uses logistic regression(linearly seperable)
 
 - hepatitis uses random forest
 
