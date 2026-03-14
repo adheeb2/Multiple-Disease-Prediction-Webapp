@@ -474,24 +474,24 @@ if selected == 'Liver prediction':  # pagetitle
         elif value == "female":
             Sex = 1
     with col2:
-        age = st.number_input("Entre your age") # 2 
+        age = st.number_input("enter your age") # 2 
     with col3:
-        Total_Bilirubin = st.number_input("Entre your Total_Bilirubin") # 3
+        Total_Bilirubin = st.number_input("enter your Total_Bilirubin") # 3
     with col1:
-        Direct_Bilirubin = st.number_input("Entre your Direct_Bilirubin")# 4
+        Direct_Bilirubin = st.number_input("enter your Direct_Bilirubin")# 4
 
     with col2:
-        Alkaline_Phosphotase = st.number_input("Entre your Alkaline_Phosphotase") # 5
+        Alkaline_Phosphotase = st.number_input("enter your Alkaline_Phosphotase") # 5
     with col3:
-        Alamine_Aminotransferase = st.number_input("Entre your Alamine_Aminotransferase") # 6
+        Alamine_Aminotransferase = st.number_input("enter your Alamine_Aminotransferase") # 6
     with col1:
-        Aspartate_Aminotransferase = st.number_input("Entre your Aspartate_Aminotransferase") # 7
+        Aspartate_Aminotransferase = st.number_input("enter your Aspartate_Aminotransferase") # 7
     with col2:
-        Total_Protiens = st.number_input("Entre your Total_Protiens")# 8
+        Total_Protiens = st.number_input("enter your Total_Protiens")# 8
     with col3:
-        Albumin = st.number_input("Entre your Albumin") # 9
+        Albumin = st.number_input("enter your Albumin") # 9
     with col1:
-        Albumin_and_Globulin_Ratio = st.number_input("Entre your Albumin_and_Globulin_Ratio") # 10 
+        Albumin_and_Globulin_Ratio = st.number_input("enter your Albumin_and_Globulin_Ratio") # 10 
     # code for prediction
     liver_dig = ''
 
@@ -614,7 +614,7 @@ if selected == 'Jaundice prediction':  # pagetitle
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        age = st.number_input("Entre your age   ") # 2 
+        age = st.number_input("enter your age   ") # 2 
     with col2:
         Sex=0
         display = ("male", "female")
@@ -625,18 +625,18 @@ if selected == 'Jaundice prediction':  # pagetitle
         elif value == "female":
             Sex = 1
     with col3:
-        Total_Bilirubin = st.number_input("Entre your Total_Bilirubin") # 3
+        Total_Bilirubin = st.number_input("enter your Total_Bilirubin") # 3
     with col1:
-        Direct_Bilirubin = st.number_input("Entre your Direct_Bilirubin")# 4
+        Direct_Bilirubin = st.number_input("enter your Direct_Bilirubin")# 4
 
     with col2:
-        Alkaline_Phosphotase = st.number_input("Entre your Alkaline_Phosphotase") # 5
+        Alkaline_Phosphotase = st.number_input("enter your Alkaline_Phosphotase") # 5
     with col3:
-        Alamine_Aminotransferase = st.number_input("Entre your Alamine_Aminotransferase") # 6
+        Alamine_Aminotransferase = st.number_input("enter your Alamine_Aminotransferase") # 6
     with col1:
-        Total_Protiens = st.number_input("Entre your Total_Protiens")# 8
+        Total_Protiens = st.number_input("enter your Total_Protiens")# 8
     with col2:
-        Albumin = st.number_input("Entre your Albumin") # 9 
+        Albumin = st.number_input("enter your Albumin") # 9 
     # code for prediction
     jaundice_dig = ''
 
