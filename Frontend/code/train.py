@@ -53,3 +53,5 @@ print(f"The accuracy of the model is {accuracy_score(y_test, preds)}")
 # Export model
 joblib.dump(model, gzip.open('model/model_binary.dat.gz', "wb"))
 model.save_model("model/xgboost_model.json")
+
+overfitting

@@ -59,5 +59,7 @@ Please follow the below steps to run this project.
 
 - xgboost,svc,logistic regerssion
 
+sigmoid function
+
 
 env\Scripts\activate

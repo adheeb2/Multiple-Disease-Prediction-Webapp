@@ -246,6 +246,7 @@ Voice/motor measurements (22 features from UCI Parkinson's dataset):
 | Lung Cancer | Logistic Regression | Linearly separable data |
 
 ---
+decision tree<random forest< xgboost
 
 ## How to Run
 
